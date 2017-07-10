@@ -1,3 +1,182 @@
 * {
   box-sizing: border-box;
 }
+
+fieldset {
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #2D3945;
+}
+
+.divider {
+  background-color: #2D3945;
+  height: 1px;
+  width: 100%;
+  margin: auto;
+}
+
+.big-divider {
+  background-color: #2D3945;
+  height: 3px;
+  width: 100%;
+  margin: 3px auto;
+}
+
+.wrapper {
+  max-width: 95%;
+  margin: auto;
+}
+
+
+/*****HEADER*****/
+
+header {
+  text-align: center;
+  background-color: #2D3945;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.top-fieldset {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.top-fieldset p {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #B7BCBF;
+}
+
+
+/******FORM******/
+
+.form-fieldset input,
+.form-fieldset label,
+.form-fieldset legend {
+  display: block;
+}
+
+.form-fieldset legend {
+  padding: 20px 0;
+}
+
+.form-fieldset input {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  background-color: #EFF0F1;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.form-fieldset input:focus {
+  outline-color: #2D3945;
+  outline-style: solid;
+  outline-width: 2px;
+
+}
+
+.form-fieldset input::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+.form-fieldset select {
+  margin: 10px 0;
+  border: none;
+  background-color: #EFF0F1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  outline-color: #2D3945;
+  color: #ADB2B7;
+}
+
+.form-fieldset label {
+  font-size: 1.1em;
+}
+
+.form-fieldset .divider {
+  margin: 30px 0 15px 0;
+}
+
+/***NEWSLETTER***/
+
+.newsletter-fieldset label,
+.newsletter-fieldset legend,
+.newsletter-fieldset input,
+.newsletter-fieldset textarea,
+.newsletter-fieldset button {
+  display: inline-block;
+}
+
+.title-label {
+  font-size: 1.1em;
+  padding: 10px 0;
+}
+
+.newsletter-fieldset textarea {
+  width: 100%;
+  background-color: #EFF0F1;
+  border: none;
+  border-radius: 6px;
+  outline-color: #2D3945;
+}
+
+.newsletter-fieldset button {
+  width: 100%;
+  background-color: #4EBBB5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 20px 0;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/*****FOOTER*****/
+
+.copyright {
+  color: #B7BCBF;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+/*======================
+    MEDIA QUERIES
+=======================*/
+
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 65%;
+      margin: auto;
+    }
+
+    .form-fieldset input,
+    .form-fieldset label {
+      display: inline-block;
+    }
+
+    .form-fieldset label {
+      width: 25%;
+    }
+
+    .form-fieldset input,
+    .form-fieldset select {
+      width: 74%;
+    }
+}
